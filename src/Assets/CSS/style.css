@@ -14,4 +14,168 @@ a:hover {
     text-decoration: none;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    overflow: hidden;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.header-section {
+    width: 100vw;
+    top: 0;
+    height: 15%;
+    background-color: #262626;
+    z-index: 1;
+    position: absolute;
+    -webkit-app-region: drag;
+    box-shadow: 0px 0px 5px black;
+    display: flex;
+}
+
+.logo {
+    z-index: 100;
+    color: white;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    display: flex;
+    background-color: #2d2d2d;
+    width: 28%;
+    height: 80px;
+    border-radius: 20px;
+    margin-top: 14px;
+    margin-left: 14px;
+    -webkit-app-region: no-drag;
+    transition: 0.5s ease;
+}
+
+.logo:hover {
+    transition: 0.5s ease;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px black;
+}
+
+.login {
+    z-index: 120;
+    color: white;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: #2d2d2d;
+    width: 28%;
+    height: 80px;
+    border-radius: 20px;
+    margin-top: 14px;
+    margin-left: 350px;
+    -webkit-app-region: no-drag;
+    transition: 0.5s ease;
+    text-align: center;
+}
+
+.login:hover {
+    transition: 0.5s ease;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px black;
+}
+
+.login h1 {
+    color: white;
+    user-select: none;
+    -webkit-app-region: no-drag;
+    font-size: 30px;
+    transform: translateY(20px);
+}
+
+.logo img {
+    margin-left: 10px;
+    width: 80px;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.logo img:hover {
+    cursor: pointer;
+}
+
+.logo h1 {
+    color: white;
+    user-select: none;
+    -webkit-app-region: no-drag;
+    font-size: 25px;
+    transform: translateY(24px);
+    margin-left: 10px;
+}
+
+.exit-button {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background-color: #2d2d2d;
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    text-align: center;
+    -webkit-app-region: no-drag;
+    transition: 0.3s ease;
+}
+
+.exit-button img {
+    width: 30px;
+    margin-top: 15px;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.exit-button:hover {
+    transition: 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px black;
+}
+
+.launch-button {
+    position: absolute;
+    width: 350px;
+    height: 100px;
+    top: calc(45vh);
+    transform: translateX(calc(50vw - 50%));
+    font-size: 25px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 5px solid rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    transition: 0.5s ease;
+}
+
+.launch-button:hover {
+    transition: 0.5s ease;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 400px;
+    font-family: "Poppins", sans-serif;
+    user-select: none;
+    cursor: pointer;
+}
+
+#mc-versions {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    top: calc(62vh);
+    left: calc(50vw - 100px);
+    color: white;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 5px solid rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.5s ease;
+    font-size: 25px;
+}
+#mc-versions:hover {
+    transition: 0.5s ease;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-family: "Poppins", sans-serif;
+    user-select: none;
+    cursor: pointer;
+}
+
+#mc-versions option {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5);
 }

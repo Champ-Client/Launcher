@@ -1,0 +1,42 @@
+:root {
+    --bg-right-top: rgb(247, 129, 129);
+    --bg-left-top: rgb(120, 154, 247);
+    --bg-right-bottom: rgb(98, 243, 176);
+    --bg-left-bottom: rgb(238, 115, 232);
+    --bg-center: rgb(84, 219, 219);
+}
+
+
+.background {
+    z-index: -1;
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(to top left, var(--bg-right-bottom), rgba(69, 69, 69, 0), var(--bg-left-top)),
+    linear-gradient(to top right, var(--bg-left-bottom), rgba(69, 69, 69, 0), var(--bg-right-top))
+    var(--bg-center);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    height: 100vh;
+
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+
+    transform: scale(1.1);
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}

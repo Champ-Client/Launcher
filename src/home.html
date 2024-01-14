@@ -3,8 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
+    <link rel="stylesheet" href="./Assets/CSS/main.css">
 </head>
 <body>
-
+    <div class="background"></div>
+    <div class="header-section">
+        <div class="logo" onclick="window.location.href = './home.html'">
+            <img src="Assets/Img/crown.png" alt="Crown">
+            <h1>Champ Client</h1>
+        </div>
+        <div class="login" onclick="logIn()">
+            <h1>Login to Minecraft</h1>
+        </div>
+        <div class="exit-button" onclick="window.close()">
+            <img src="Assets/Img/x.png" alt="X">
+        </div>
+    </div>
+    <div id="launch-container" class="launch-section">
+        <button class="launch-button" id="launch-btn" onclick="launch()">
+            Launch
+        </button>
+        <label for="mc-versions">Choose a versions</label>
+        <select name="MC Versions" id="mc-versions">
+            <option value="1.8.9">1.8.9</option>
+            <option value="1.7.10">1.7.10</option>
+            <option value="1.12.2">1.12.2</option>
+            <option value="1.14">1.14</option>
+        </select>
+    </div>
+    <script src="Assets/JS/home.js"></script>
 </body>
 </html>
